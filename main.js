@@ -42,7 +42,7 @@ scene.add(topLight);
 const reRender3D = () => {
   requestAnimationFrame(reRender3D);
   renderer.render(scene, camera);
-  if (mixer) mixer.update(0.00009);
+  if (mixer) mixer.update(0.009);
 };
 reRender3D();
 
