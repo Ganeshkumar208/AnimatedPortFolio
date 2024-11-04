@@ -14,7 +14,7 @@ const scene = new THREE.Scene();
 let bee;
 let mixer;
 const loader = new GLTFLoader();
-loader.load('/public/lowpoly_bird_robin.glb',
+loader.load('/lowpoly_bird_robin.glb',
   function (gltf) {
     bee = gltf.scene;
     scene.add(bee);
