@@ -3,7 +3,7 @@ import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/l
 import { gsap } from 'https://cdn.skypack.dev/gsap';
 
 const camera = new THREE.PerspectiveCamera(
-  10,
+  5,
   window.innerWidth / window.innerHeight,
   0.1,
   100
@@ -14,7 +14,7 @@ const scene = new THREE.Scene();
 let bee;
 let mixer;
 const loader = new GLTFLoader();
-loader.load('/lady_bug_bird.glb',
+loader.load('/lowpoly_bird_robin.glb',
   function (gltf) {
     bee = gltf.scene;
     scene.add(bee);
