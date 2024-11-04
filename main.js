@@ -3,7 +3,7 @@ import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/l
 import { gsap } from 'https://cdn.skypack.dev/gsap';
 
 const camera = new THREE.PerspectiveCamera(
-  30,
+  10,
   window.innerWidth / window.innerHeight,
   0.1,
   100
@@ -14,7 +14,7 @@ const scene = new THREE.Scene();
 let bee;
 let mixer;
 const loader = new GLTFLoader();
-loader.load('/demon_bee_full_texture.glb',
+loader.load('/lady_bug_bird.glb',
   function (gltf) {
     bee = gltf.scene;
     scene.add(bee);
@@ -49,7 +49,7 @@ reRender3D();
 let arrPositionModel = [
   {
     id: 'banner',
-    position: { x: 0, y: -1.3, z: 0 },
+    position: { x: 0, y: -0.3, z: 0 },
     rotation: { x: 0, y: 1.5, z: 0 }
   },
   {
